@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudiar-1O1</title>
+    <link rel="stylesheet" href="style.css">
+
+    <nav>
+        <ul class="sidebar">
+            <li id="x-bar" onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3
+            class.org/2000/svg" height="26" viewBox="0 0 640 640" width="26"><path d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"/></svg></a></li>
+            <li id="user">User: Admin</li>
+              <li id="pass">Pass: RonnyIsCool</li>
+            <li id="abouts"><a href="about.html">About</a></li>
+            <li id="login"><a href="index.html">Logout</a></li>
+              
+        </ul>
+        <ul>
+            <li id="refresh"><a href="page1.html" title="Press to refresh"><ins>Estudiar-1O1</ins></a></li>
+            <li id="abouts" class="hideOnMobile"><a href="about.html">About</a></li>
+            <li id="login" class="hideOnMobile"><a href="index.html">Logout</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 0 640 640" width="26"><path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/></svg></a></li>
+        </ul>
+    </nav>
+    <script>
+    function showSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+    </script>
+
+</head>
+<body>
+    <h1 id="centered">Welcome</h1>
+    <br>
+    Welcome to Estudiar-1O1's main page. Here you will find info on all stuff mentioned in the about page. If you have not yet visited it please do so.
+    <br>
+    <br>
+
+    <h1 id="centered" style="font-size: 20px;">The Basics of Effective Studying</h1>
+    <br>
+    <br>
+    <h2>Understand How We Learn:</h2>
+    <br>
+    Before students can study effectively, they need to understand how their brain processes and retains information. This is a great starting point for your content.
+    <br>
+    <br>
+    <dl>
+        <dt class="dt_sized">
+            Active vs. Passive Learning:
+        </dt>
+        <br>
+        <dd>
+            <b>
+                Passive learning is just reading or listening without engaging, while active learning involves things like summarizing, teaching others, or solving problems. Emphasize that active learning is far more effective for long-term retention.
+            </b>
+            <br>
+            <br>
+            <section id="section1">
+                <img src="https://www.asiancollegeofteachers.com/admin_act/blogs/upload/1289782554.jpg" height="150px" id="img1">
+                This image shows more in-dept information on Passive & Active learning. The image shows a Learning Pyramid that explains how we learn and remember things.
+                <br>
+                <br>
+
+Think of it this way: the more you do, the more you remember.
+<br>
+<br>
+<b>Passive learning is when you just take in information without doing much.</b>
+<br>
+Reading and listening are at the very top. You only remember a small amount because your brain isn't fully engaged.
+<br>
+Seeing things (like a video or demonstration) helps a bit more, but it's still passive.
+<br>
+These methods are good for simple tasks like defining a word.
+<br>
+<br>
+<b>
+Active Learning
+This is when you actively use the information. This is where real learning happens.
+</b>
+<br>
+<br>
+Teaching others and writing things down forces you to understand the material well enough to explain it.
+<br>
+<br>
+Practicing or doing something yourself is the best way to learn. This could be solving a math problem, building a project, or running a science experiment.
+<br>
+<br>
+<b>
+    These methods help you analyze, create, and truly master a topic.
+</b>
+            </section>
+            <br>
+        </dd>
+        <br>
+        <dt class="dt_sized" id="stop_float">Spaced Repetition:</dt> 
+        <br>
+        <dd>
+            <b>
+                This is a powerful learning technique. Explain how reviewing information at increasing intervals helps move it from short-term to long-term memory. You could use an example like studying a new vocabulary word and then reviewing it an hour later, a day later, and then three days later.
+            </b>
+        </dd>
+        <br>
+        <dt class="dt_sized">The Forgetting Curve:</dt>
+        <br>
+        <dd>
+            <b>
+                Introduce the concept that we naturally forget information over time. This helps students understand why they need to review material and why cramming doesn't work.
+            </b>
+        </dd>
+        <br>
+        <hr>
+        <br>
+    </dl>
+    <h2>Creating A Study Plan: </h2>
+    <br>
+    Many students fail because they don't have a plan. Your website can help them build a solid foundation.
+    <br>
+    <br>
+
+    <dl>
+    <dt class="dt_sized">Time Management:</dt>
+    <br>
+    <dd>
+        <b>
+            Provide practical advice on creating a study schedule. Suggest breaking up study sessions into manageable chunks (e.g., using the Pomodoro Technique—25 minutes of focused work, followed by a 5-minute break).
+        </b>
+    </dd>
+    <br>
+    <dt class="dt_sized">Setting Goals: </dt>
+    <br>
+    <dd>
+        <b>
+            Teach students how to set SMART goals (Specific, Measurable, Achievable, Relevant, Time-bound) for their study sessions. For example, instead of "study for my history test," a SMART goal would be "review Chapters 3 and 4 for 45 minutes by summarizing the key events."
+        </b>
+    </dd>
+
+    <br>
+    <br>
+
+    <dt class="dt_sized">Prioritizing Tasks:</dt>
+    <br>
+    <dd>
+        <b>
+            Give tips on how to identify what's most important to study. They can use methods like the Eisenhower Matrix to categorize tasks into "urgent and important," "important but not urgent," etc.
+        </b>
+    </dd>
+    <br>
+    <br>
+    <hr>
+    </dl>
+
+    <h2>Study Methods and Techniques</h2>
+    <br>
+    This is where you can get into the nitty-gritty of how to study different subjects.
+    <br>
+    <br>
+    
+    <dl>
+    <dt>Note-Taking Strategies:</dt> 
+    <dd>
+        Go beyond just copying down what's on the board. Introduce methods like the Cornell Method (a specific layout for notes), mind mapping (visualizing connections between ideas), or using a simple outline.
+    </dd>
+    <br>
+    <br>
+
+   <dt> Active Recall:</dt> 
+   <br>
+   <dd>
+    This is one of the most powerful study techniques. Explain that instead of just rereading notes, students should try to retrieve information from memory. Give examples:
+
+    Flashcards (physical or digital)
+
+    Answering practice questions
+
+    Explaining a concept out loud to a friend or to themselves
+   </dd>
+    <br>
+    <dt>Elaboration:</dt> 
+    <br>
+    <dd>
+        Encourage students to connect new information to what they already know. Provide examples like:
+
+        Creating analogies or metaphors
+
+        Finding real-world examples of a concept
+    </dd>
+    <br>
+    <dt>The Feynman Technique:</dt> 
+    <br>
+    <dd>
+        This is a fantastic method for deep understanding. Explain the four steps:
+
+        Choose a concept.
+
+        Teach it to someone who knows nothing about it.
+
+        Identify your weak points.
+
+        Review and simplify.
+    </dd>
+    </dl>
+    <br>
+<footer>
+    <p>
+    I hope you learned something new. Feel free to visit other websites for more information as there are many out there similar to this, if not better.
+    </p>
+    Created By: Ronny Co.
+</footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+
+    <nav>
+        <ul class="sidebar">
+            <li id="x-bar" onclick="hideSidebar()"><a href="#"><svg xmlns="http://www.w3
+            class.org/2000/svg" height="26" viewBox="0 0 640 640" width="26"><path d="M183.1 137.4C170.6 124.9 150.3 124.9 137.8 137.4C125.3 149.9 125.3 170.2 137.8 182.7L275.2 320L137.9 457.4C125.4 469.9 125.4 490.2 137.9 502.7C150.4 515.2 170.7 515.2 183.2 502.7L320.5 365.3L457.9 502.6C470.4 515.1 490.7 515.1 503.2 502.6C515.7 490.1 515.7 469.8 503.2 457.3L365.8 320L503.1 182.6C515.6 170.1 515.6 149.8 503.1 137.3C490.6 124.8 470.3 124.8 457.8 137.3L320.5 274.7L183.1 137.4z"/></svg></a></li>
+            <li id="user">User: Admin</li>
+              <li id="pass">Pass: RonnyIsCool</li>
+            <li id="abouts"><a href="page1.html">Home</a></li>
+            <li id="login"><a href="index.html">Logout</a></li>
+              
+        </ul>
+        <ul>
+            <li id="refresh"> <a href="about.html" title="Press to refresh"><ins>About</ins></a></li>
+            <li id="abouts" class="hideOnMobile"><a href="page1.html">Home</a></li>
+            <li id="login" class="hideOnMobile"><a href="index.html">Logout</a></li>
+            <li class="menu-button" onclick="showSidebar()"><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 0 640 640" width="26"><path d="M96 160C96 142.3 110.3 128 128 128L512 128C529.7 128 544 142.3 544 160C544 177.7 529.7 192 512 192L128 192C110.3 192 96 177.7 96 160zM96 320C96 302.3 110.3 288 128 288L512 288C529.7 288 544 302.3 544 320C544 337.7 529.7 352 512 352L128 352C110.3 352 96 337.7 96 320zM544 480C544 497.7 529.7 512 512 512L128 512C110.3 512 96 497.7 96 480C96 462.3 110.3 448 128 448L512 448C529.7 448 544 462.3 544 480z"/></svg></a></li>
+        </ul>
+    </nav>
+
+    <script>
+    function showSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'flex'
+    }
+    function hideSidebar() {
+        const sidebar = document.querySelector('.sidebar')
+        sidebar.style.display = 'none'
+    }
+    </script>
+</head>
+<body>
+    <h1 id="centered">About</h1>
+    <br>
+    <h2>About Estudiar-1O1: </h2>
+    <br>
+    Estudiar-1O1 is built to aid students in their journey throughout school by giving them essential skills to develop their study habits, improve memory, and succeed in exams. No tricks, just proven strategies.
+    <br>
+    <br>
+    <h2>What We Do:</h2>
+    <br>
+    We teach practical techniques that save time and boosts results. This guide covers essential study skills, note-taking strategies, as well as exam preparation skills. By the end of this you will:
+    <br>
+    <ol type="1">
+        <li>Learn how to properly take notes during class.</li>
+        <li>Learn how to spot important information during class sessions.</li>
+        <li>Feel more confident for you next exam.</li>
+    </ol>
+    <br>
+
+    <h2>Who It's For:</h2>
+    <br>
+    This guide aids high school students, college students, or even self-learners. If you want to learn how to learn, you belong here. 
+    <br>
+    <br>
+    Made By: Ronny Co.
+</body>
+</html>

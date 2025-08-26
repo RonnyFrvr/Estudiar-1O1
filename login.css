@@ -1,0 +1,97 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(rgb(2, 2, 53), rgb(53, 39, 72));
+    margin: 0;
+}
+
+.login-container {
+    background: linear-gradient(rgba(4, 3, 86, 0.384), rgba(45, 45, 60, 0.564));
+    backdrop-filter: blur(10px);
+    padding: 2rem;
+    border: 3px solid rgb(255, 255, 255);
+    border-image: linear-gradient(to right, blue, black) 1;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    box-shadow: 12px 12px #0c0b0b53;
+}
+
+.login-container input{
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 1rem 0;
+    border: 1px solid #0b0748;
+    border-radius: 8px;
+    accent-color: rgb(7, 7, 80);
+    caret-color: lightgray;
+    background-color: #090638;
+    color: lightgray;
+    transition: all 0.4s ease;
+}
+.login-container input:focus{
+    color: lightgray;
+    background-color: #0e0862;
+    box-shadow: 8px 8px 3px #130606;
+    border-color: black;
+}
+.login-container input:-webkit-autofill {
+    background-color: #0e0862 !important;
+    -webkit-box-shadow: 0 0 0px 1000px #0e0862 inset !important;
+    -webkit-text-fill-color: lightgray;
+}
+
+.login-container button{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background: #16053f84;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.login-container button:hover{
+    background: #2206659e;
+    color: #ffffff;
+}
+
+.fa-eye{
+    position: relative;
+    top: -44px;
+    left: 100px;
+}
+.fa-eye-slash{
+    position: relative;
+    top: -44px;
+    left: 100px;
+}
+
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+
+.login-container{
+    border-image: conic-gradient(from var(--angle), blue, black, blue) 1;
+    animation: 1s spin linear infinite;
+}
+
+@keyframes spin{
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
+h2{
+    position: relative;
+    top: -13px;
+}
